@@ -1,0 +1,42 @@
+<style>
+/*============================================================================== 
+Test media Queries
+================================================================================ */
+/*
+@media (max-width: 1122px) {
+.responsive-indicator:before {content: "Max-width: 1122px";font-size:1.5em;background:green;}
+}
+
+@media (max-width: 800px) {
+.responsive-indicator:before {content: "Max-width: 800px";font-size:1.3em;background:blue;color:#fff}
+}
+
+@media (max-width: 500px) {
+.responsive-indicator:before {content: "Max-width: 500px";font-size:1em;background:teal;color:#000}
+}
+
+@media (max-width: 400px) {
+.responsive-indicator:before {content: "Max-width: 400px";font-size:1em;background:yellow;color:#000}
+}
+*/
+
+.responsive-indicator span{background:#aaa;border-radius:3px;bottom:5px;color:#FFF;display:block;float:left;left:10px;padding:3px 10px;position:fixed;z-index:999999}
+.responsive-indicator:before{display:block;width:100%;text-align:center;background:#fff;color:#fff;position:fixed;bottom:0;box-shadow:0 0 5px #000;font-size:1em;letter-spacing:.01em;line-height:38px;color:#000;z-index:99999}
+
+
+.responsive-indicator:before {content: "Mobile First - Showing everything";font-size:1.5em;background:yellow;}
+
+@media (min-width: 768px) {
+.responsive-indicator:before {content: "Min-width: 768px";font-size:1.5em;background:blue;color:#fff}
+}
+
+@media (min-width: 992px) {
+.responsive-indicator:before {content: "Min-width: 992px (Medium devices, desktops, 1000px and up)";font-size:1.5em;background:teal;color:#000}
+
+}
+@media (min-width: 1200px) {
+.responsive-indicator:before {content: "Min-width: 1200px";font-size:1.5em;;background:green;color:#fff}
+}
+</style>
+
+<div class="responsive-indicator"><span>Developer note</span></div>
